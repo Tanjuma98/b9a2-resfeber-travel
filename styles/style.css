@@ -57,6 +57,7 @@ body {
 }
 
 /* header section styles */
+/* header-navigation styles */
 nav {
     display: flex;
     justify-content: space-between;
@@ -84,6 +85,7 @@ nav .nav-link-text {
     text-decoration: none;
 }
 
+/* header-banner styles */
 .banner {
     text-align: center;
     background-image: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%), url('../Images/banner.png');
@@ -140,6 +142,60 @@ select {
 }
 
 /* main section styles */
+main section {
+    margin: 100px 0;
+}
+
+.section {
+    text-align: center;
+}
+
+.layout-1 {
+    margin: 24px 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 20px;
+}
+
+.layout-2 {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr 1fr;
+    align-items: center;
+    gap: 20px;
+}
+
+.layout-3 {
+    margin-top: 24px;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    align-items: center;
+    gap: 20px;
+}
+
+.layout-1 div,
+.layout-2 div,
+.layout-3 div {
+    height: 100%;
+}
+
+.layout-1 div img,
+.layout-2 div img,
+.layout-3 div img {
+    object-fit: cover;
+    border-radius: 16px;
+    width: 100%;
+    height: 100%;
+}
+
+.country-text {
+    color: #FFF;
+    position: relative;
+    bottom: 200px;
+    font-size: 28px;
+    font-weight: 800;
+}
+
 /* footer section styles */
 footer {
     padding: 60px 150px;
@@ -184,9 +240,17 @@ footer .footer-small-text {
     }
 
     .banner-form input[type="text"],
-    select, .btn-find-now {
+    select,
+    .btn-find-now {
         width: 80%;
         height: 45px;
+    }
+
+    .layout-1,
+    .layout-2,
+    .layout-3 {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 0 20px;
     }
 
     header,
