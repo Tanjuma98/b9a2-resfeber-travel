@@ -173,8 +173,43 @@ main section {
 }
 
 .section-2 h3 {
-    margin-bottom: 20px;
+    margin-bottom: 28px;
 }
+
+.cards {
+    margin: 24px 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.card {
+    text-align: start;
+    padding: 16px;
+    border-radius: 5px;
+    background-color: #FFF;
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+}
+
+
+.card-title {
+    margin: 8px 0;
+    color: #FF5400;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.card-person {
+    margin: 8px 0;
+    color: rgba(0, 0, 0, 0.87);
+    font-size: 20px;
+}
+
+.card-person-post {
+    margin: 5px 0;
+    color: #787885;
+}
+
 
 .layout-1 {
     margin: 20px 0;
@@ -261,6 +296,10 @@ footer .footer-small-text {
         display: inline;
     }
 
+    main section {
+        margin: 30px 0;
+    }
+
     .section-1 {
         flex-direction: column;
     }
@@ -285,7 +324,8 @@ footer .footer-small-text {
 
     .layout-1,
     .layout-2,
-    .layout-3 {
+    .layout-3,
+    .cards {
         grid-template-columns: repeat(1, 1fr);
         padding: 0 20px;
     }
